@@ -167,7 +167,7 @@ git push origin master -f  ,-f 参数是强制提交，因为reset之后本地�
 远程库版本，因此需要强制提交。
 git revert HEAD  和 reset 的区别是，前者会保留要放弃的提交记录。
 暂存区index 和 本地仓库HEAD 都是指针形式指向objects文件hash。
-
+![git仓库.jpg](https://upload-images.jianshu.io/upload_images/13253304-a05c8a96643a1226.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
@@ -290,3 +290,6 @@ git revert HEAD  和 reset 的区别是，前者会保留要放弃的提交记�
 ##### 十三、 企业级应用gitflow，项目开发、发布、bug修复的分支规划
 
 master分支和dev开发分支都会存在开发历史记录，程序员平日根据项目功能模块从dev开发分支打出feature_x功能分支，开发的功能完成之后会合并到dev开发分支上，并删除该功能分支，当dev开发分支收集完这次迭代功能，需要发布版本时，会创建release分支，部署release分支代码到测试环境供测试人员进行测试，修复bug会提交到release分支上，测试通过后会将release分支合并到主分支并打一个标签，release分支合并到开发分支，并将release分支删除。生产环境运行的是master分支打的发布标签版本号，生产环境发现bug，会从master主分支打出一个hotfix分支，做bug修复，修复完成会合并到master主分支和dev开发分支，删除hotfix分支。也就是说dev开发分支就第一次从master主分支上打出来之后就独立往前推进，当收集完feature会打出release分支，release分支测试完毕，合并到master主分支并打出版本号标签，记录发布版本号。合并到dev开发分支，使得开发分支保持最新代码状态。此时release分支使命就结束了。
+![gitflow.png](https://upload-images.jianshu.io/upload_images/13253304-9075cc94d03a5e11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
