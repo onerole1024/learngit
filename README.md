@@ -1,7 +1,4 @@
-我们做毕业设计一般包含代码部分和论文，为了保存论文每次更改记录，会复制重命名，
-对于代码部分一般也会复制文件夹记录版本。在企业当中是一个团队在开发，显然需要
-版本管理，能够查看每次提交的代码比上个版本的变化，如果版本存在问题，可以回滚到
-老版本等等。此处介绍企业中都在用的git，工作流程：
+t，工作流程：
 本地工作区【代码目录】-》到暂存区【加入git文件跟踪,文件索引】-》到本地仓库-》
 远程仓库【大家都可以访问的服务器，例如github】
 
@@ -213,25 +210,6 @@ git push
 
 
 
-
-
-
-
-
-
-sourcetree
-git status
-git add test.txt
-git commit -m "submit 添加发表情功能"
-git reset --hard xxx[版本号]
-
-git add test.txt  在暂存区 还未提交到仓库
-git reset HEAD  test.txt  暂存区回滚为仓库版本
-git checkout -- text.txt 当前工作区变更
-
- 
-git rm test.txt   但暂存区和仓库还没有清空
-git commit -m "删除"
 
 
 
