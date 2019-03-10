@@ -167,7 +167,7 @@ git push origin master -f  ,-f 参数是强制提交，因为reset之后本地�
 远程库版本，因此需要强制提交。
 git revert HEAD  和 reset 的区别是，前者会保留要放弃的提交记录。
 暂存区index 和 本地仓库HEAD 都是指针形式指向objects文件hash。
-![git仓库.jpg](https://upload-images.jianshu.io/upload_images/13253304-a05c8a96643a1226.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![![工作区-暂存区-本地仓库.jpg](https://upload-images.jianshu.io/upload_images/13253304-a05c8a96643a1226.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240).jpg](https://upload-images.jianshu.io/upload_images/13253304-a05c8a96643a1226.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
